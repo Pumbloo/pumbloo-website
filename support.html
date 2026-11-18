@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Pumbloo Interactive</title>
+<meta name="description" content="Get help from Pumbloo Interactive.">
+<meta property="og:title" content="Support · Pumbloo Interactive">
+<meta property="og:description" content="Get help from Pumbloo Interactive.">
+<meta property="og:image" content="https://pumbloo.com/assets/og-image.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#082A32">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="preload" href="assets/fonts/lilita-one.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar solid">
+  <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36">Pumbloo</a>
+  <button class="btn menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav" aria-label="Main"><a href="index.html">Home</a><a href="support.html" aria-current=page>Support</a><a href="account.html">Log in</a></nav>
+</header>
+<main id="main" class="page">
+
+<h1>Support</h1>
+<p class="updated">We're a tiny studio. We usually reply within 3 days.</p>
+
+<div class="grid3">
+  <div class="card"><h2 style="margin:0 0 6px;font-size:22px">Email</h2><p style="margin:0"><a href="mailto:hello@pumbloo.com">hello@pumbloo.com</a></p></div>
+  <div class="card"><h2 style="margin:0 0 6px;font-size:22px">Community</h2><p style="margin:0"><a href="https://discord.gg/jzEBQ8asQc" rel="noopener">Join our Discord</a></p></div>
+  <div class="card"><h2 style="margin:0 0 6px;font-size:22px">Updates</h2><p style="margin:0"><a href="https://www.youtube.com/@pumbloo" rel="noopener">YouTube</a> and <a href="https://www.instagram.com/pumbloo_int/" rel="noopener">Instagram</a></p></div>
+</div>
+
+<h2 id="form-title">Send us a message</h2>
+<p>This form opens your own email app with your message ready to send. The website itself doesn't store or send anything.</p>
+<form id="support-form" novalidate aria-labelledby="form-title">
+  <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-err"><span class="err" id="name-err" aria-live="polite"></span></div>
+  <div class="field"><label for="email">Your email</label><span class="hint" id="email-hint">So we can reply. We won't add you to any list.</span><input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hint email-err"><span class="err" id="email-err" aria-live="polite"></span></div>
+  <div class="field"><label for="topic">What's it about?</label>
+    <select id="topic" name="topic" required aria-describedby="topic-err">
+      <option>General question</option><option>Bug or problem with a game</option><option>Refund</option><option>Press or business</option><option>Delete my data</option><option>Something else</option>
+    </select><span class="err" id="topic-err" aria-live="polite"></span></div>
+  <div class="field"><label for="message">Message</label><textarea id="message" name="message" required minlength="10" aria-describedby="message-err"></textarea><span class="err" id="message-err" aria-live="polite"></span></div>
+  <fieldset><legend class="legend">Consent</legend>
+    <div class="check"><input type="checkbox" id="consent" required aria-describedby="consent-err"><label for="consent">I agree that Pumbloo Interactive may use my name and email to reply to this message, as explained in the <a href="privacy.html">privacy policy</a>.</label></div>
+    <span class="err" id="consent-err" aria-live="polite"></span>
+    <div class="check"><input type="checkbox" id="age"><label for="age">I'm 18 or older, or a parent or guardian knows I'm writing. (Optional)</label></div>
+  </fieldset>
+  <p><button class="btn primary" type="submit">Open my email app</button></p>
+  <p class="status" id="support-status" role="status" tabindex="-1"></p>
+</form>
+
+<h2>Common questions</h2>
+<details><summary>When is your first game coming out?</summary><p>We don't have a date yet. Follow us on YouTube or Instagram and we'll announce it there first.</p></details>
+<details><summary>How do I get my data deleted?</summary><p>Choose "Delete my data" in the form above, or see <a href="privacy.html#delete">Delete my data</a>. We confirm within 30 days.</p></details>
+<details><summary>How do refunds work?</summary><p>See our <a href="refund.html">refund policy</a>. We don't sell anything yet.</p></details>
+<details><summary>Can I use your art or videos?</summary><p>You can share our posts with credit. For anything else, please ask first. See the <a href="terms.html">terms</a>.</p></details>
+
+<h2 id="business">Business details</h2>
+<div class="scroll"><table>
+<tbody>
+<tr><th scope="row">Business name</th><td>Pumbloo Interactive</td></tr>
+<tr><th scope="row">Type</th><td>Sole proprietorship</td></tr>
+<tr><th scope="row">Owner</th><td>Taran Tushar Chindarkar</td></tr>
+<tr><th scope="row">Location</th><td>Mumbai, Maharashtra, India</td></tr>
+<tr><th scope="row">Email</th><td><a href="mailto:hello@pumbloo.com">hello@pumbloo.com</a></td></tr>
+<tr><th scope="row">Website</th><td>pumbloo.com</td></tr>
+</tbody></table></div>
+
+</main>
+<footer>
+  <div class="cols">
+    <div><h2>Pumbloo Interactive</h2><p style="margin:0">An indie game studio from India.<br>Contact: <a href="mailto:hello@pumbloo.com">hello@pumbloo.com</a></p></div>
+    <nav aria-label="Studio"><h2>Studio</h2><ul><li><a href="index.html">Home</a></li><li><a href="support.html">Support</a></li><li><a href="account.html">Log in / Sign up</a></li><li><a href="support.html#business">Business details</a></li></ul></nav>
+    <nav aria-label="Legal"><h2>Legal</h2><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="cookies.html">Cookie policy</a></li><li><a href="terms.html">Terms and conditions</a></li><li><a href="refund.html">Refund policy</a></li><li><a href="privacy.html#delete">Delete my data</a></li></ul></nav>
+    <nav aria-label="Social"><h2>Follow</h2><ul><li><a href="https://discord.gg/jzEBQ8asQc" rel="noopener">Discord</a></li><li><a href="https://www.instagram.com/pumbloo_int/" rel="noopener">Instagram</a></li><li><a href="https://x.com/pumbloo_int" rel="noopener">X</a></li><li><a href="https://www.youtube.com/@pumbloo" rel="noopener">YouTube</a></li><li><a href="https://pumbloo.itch.io/" rel="noopener">itch.io</a></li></ul></nav>
+  </div>
+  <div class="legal"><span>© <span class="yr">2026</span> Pumbloo Interactive. All rights reserved.</span><button class="linkbtn" data-cookie-settings>Cookie settings</button></div>
+</footer>
+
+<div class="cookie" id="cookie" role="dialog" aria-modal="false" aria-labelledby="cookie-title" hidden>
+  <h2 id="cookie-title" tabindex="-1">Cookies and privacy</h2>
+  <p>We only use what the site needs to work. With your OK we'd also like to count visits (analytics) and show YouTube videos, which sets YouTube cookies. You can change this any time in <a href="cookies.html">Cookie settings</a>.</p>
+  <div class="opts" hidden>
+    <div class="check"><input type="checkbox" id="c-needed" checked disabled><label for="c-needed"><strong>Necessary</strong> (always on): remembers this choice.</label></div>
+    <div class="check"><input type="checkbox" id="c-analytics"><label for="c-analytics"><strong>Analytics</strong>: anonymous visit counts.</label></div>
+    <div class="check"><input type="checkbox" id="c-embeds"><label for="c-embeds"><strong>Video embeds</strong>: loads YouTube players.</label></div>
+  </div>
+  <div class="row">
+    <button class="btn primary" data-accept>Accept all</button>
+    <button class="btn" data-reject>Reject all</button>
+    <button class="btn" data-choose>Choose</button>
+    <button class="btn" data-save hidden>Save my choice</button>
+  </div>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cookie policy · Pumbloo Interactive</title>
+<meta name="description" content="Which cookies and browser storage pumbloo.com uses.">
+<meta property="og:title" content="Cookie policy · Pumbloo Interactive">
+<meta property="og:description" content="Which cookies and browser storage pumbloo.com uses.">
+<meta property="og:image" content="https://pumbloo.com/assets/og-image.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#082A32">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="preload" href="assets/fonts/lilita-one.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar solid">
+  <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36">Pumbloo</a>
+  <button class="btn menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav" aria-label="Main"><a href="index.html">Home</a><a href="support.html">Support</a><a href="account.html">Log in</a></nav>
+</header>
+<main id="main" class="page">
+
+<h1>Cookie policy</h1>
+<p class="updated">Last updated 18 November 2026</p>
+<p>Cookies are small files a website saves in your browser. We keep them to a minimum. Anything that isn't strictly necessary only runs after you say yes.</p>
+
+<h2>Your current choice</h2>
+<div class="card">
+<p id="consent-status" aria-live="polite">Loading...</p>
+<p style="display:flex;flex-wrap:wrap;gap:8px;margin:0"><button class="btn primary" data-cookie-settings>Change cookie settings</button></p>
+</div>
+
+<h2>What we use</h2>
+<div class="scroll"><table>
+<thead><tr><th>Name</th><th>Type</th><th>Why</th><th>How long</th></tr></thead>
+<tbody>
+<tr><td>pumbloo-consent</td><td>Necessary (browser storage)</td><td>Remembers your cookie choice</td><td>Until you clear it</td></tr>
+<tr><td>_ga, _ga_*</td><td>Analytics, only with consent</td><td>Google Analytics visit counting (currently switched off)</td><td>Up to 13 months</td></tr>
+<tr><td>YouTube cookies</td><td>Embeds, only with consent</td><td>Set by YouTube when you load a video (we use the privacy-enhanced youtube-nocookie.com player)</td><td>Set by YouTube</td></tr>
+</tbody></table></div>
+<p>We don't use advertising or tracking cookies, and our fonts are hosted on our own site, so loading a page doesn't contact Google Fonts.</p>
+
+<h2 id="clear">Clear what we saved</h2>
+<p>This button deletes everything pumbloo.com stored in this browser.</p>
+<p><button class="btn" id="wipe-local">Delete my saved choices</button></p>
+<p id="wipe-status" role="status"></p>
+<p>You can also block or delete cookies in your browser settings. The site still works without them.</p>
+<p>Questions? See the <a href="privacy.html">privacy policy</a> or email <a href="mailto:hello@pumbloo.com">hello@pumbloo.com</a>.</p>
+
+</main>
+<footer>
+  <div class="cols">
+    <div><h2>Pumbloo Interactive</h2><p style="margin:0">An indie game studio from India.<br>Contact: <a href="mailto:hello@pumbloo.com">hello@pumbloo.com</a></p></div>
+    <nav aria-label="Studio"><h2>Studio</h2><ul><li><a href="index.html">Home</a></li><li><a href="support.html">Support</a></li><li><a href="account.html">Log in / Sign up</a></li><li><a href="support.html#business">Business details</a></li></ul></nav>
+    <nav aria-label="Legal"><h2>Legal</h2><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="cookies.html">Cookie policy</a></li><li><a href="terms.html">Terms and conditions</a></li><li><a href="refund.html">Refund policy</a></li><li><a href="privacy.html#delete">Delete my data</a></li></ul></nav>
+    <nav aria-label="Social"><h2>Follow</h2><ul><li><a href="https://discord.gg/jzEBQ8asQc" rel="noopener">Discord</a></li><li><a href="https://www.instagram.com/pumbloo_int/" rel="noopener">Instagram</a></li><li><a href="https://x.com/pumbloo_int" rel="noopener">X</a></li><li><a href="https://www.youtube.com/@pumbloo" rel="noopener">YouTube</a></li><li><a href="https://pumbloo.itch.io/" rel="noopener">itch.io</a></li></ul></nav>
+  </div>
+  <div class="legal"><span>© <span class="yr">2026</span> Pumbloo Interactive. All rights reserved.</span><button class="linkbtn" data-cookie-settings>Cookie settings</button></div>
+</footer>
+
+<div class="cookie" id="cookie" role="dialog" aria-modal="false" aria-labelledby="cookie-title" hidden>
+  <h2 id="cookie-title" tabindex="-1">Cookies and privacy</h2>
+  <p>We only use what the site needs to work. With your OK we'd also like to count visits (analytics) and show YouTube videos, which sets YouTube cookies. You can change this any time in <a href="cookies.html">Cookie settings</a>.</p>
+  <div class="opts" hidden>
+    <div class="check"><input type="checkbox" id="c-needed" checked disabled><label for="c-needed"><strong>Necessary</strong> (always on): remembers this choice.</label></div>
+    <div class="check"><input type="checkbox" id="c-analytics"><label for="c-analytics"><strong>Analytics</strong>: anonymous visit counts.</label></div>
+    <div class="check"><input type="checkbox" id="c-embeds"><label for="c-embeds"><strong>Video embeds</strong>: loads YouTube players.</label></div>
+  </div>
+  <div class="row">
+    <button class="btn primary" data-accept>Accept all</button>
+    <button class="btn" data-reject>Reject all</button>
+    <button class="btn" data-choose>Choose</button>
+    <button class="btn" data-save hidden>Save my choice</button>
+  </div>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>

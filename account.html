@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in or sign up · Pumbloo Interactive</title>
+<meta name="description" content="Pumbloo accounts.">
+<meta property="og:title" content="Log in or sign up · Pumbloo Interactive">
+<meta property="og:description" content="Pumbloo accounts.">
+<meta property="og:image" content="https://pumbloo.com/assets/og-image.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#082A32">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="preload" href="assets/fonts/lilita-one.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar solid">
+  <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36">Pumbloo</a>
+  <button class="btn menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav" aria-label="Main"><a href="index.html">Home</a><a href="support.html">Support</a><a href="account.html" aria-current=page>Log in</a></nav>
+</header>
+<main id="main" class="page">
+
+<h1>Your Pumbloo account</h1>
+<div class="note"><p><strong>Accounts aren't open yet.</strong> They'll open together with our first game. This page is a preview: nothing you type here is sent or saved.</p></div>
+
+<div class="tabs" role="tablist" aria-label="Account">
+  <button role="tab" id="t-login" aria-selected="true" aria-controls="p-login">Log in</button>
+  <button role="tab" id="t-signup" aria-selected="false" aria-controls="p-signup" tabindex="-1">Sign up</button>
+</div>
+
+<section id="p-login" role="tabpanel" aria-labelledby="t-login" class="card" style="border-top-left-radius:0;border-top-right-radius:0">
+<form data-preview novalidate aria-label="Log in">
+  <div class="field"><label for="l-email">Email</label><input type="email" id="l-email" autocomplete="email" required aria-describedby="l-email-err"><span class="err" id="l-email-err" aria-live="polite"></span></div>
+  <div class="field"><label for="l-pass">Password</label><input type="password" id="l-pass" autocomplete="current-password" required aria-describedby="l-pass-err"><span class="err" id="l-pass-err" aria-live="polite"></span></div>
+  <p><button class="btn primary" type="submit">Log in</button></p>
+  <p class="status" role="status" tabindex="-1"></p>
+</form>
+</section>
+
+<section id="p-signup" role="tabpanel" aria-labelledby="t-signup" class="card" hidden style="border-top-left-radius:0;border-top-right-radius:0">
+<form data-preview novalidate aria-label="Sign up">
+  <div class="field"><label for="s-name">Display name</label><input type="text" id="s-name" autocomplete="nickname" required aria-describedby="s-name-err"><span class="err" id="s-name-err" aria-live="polite"></span></div>
+  <div class="field"><label for="s-email">Email</label><input type="email" id="s-email" autocomplete="email" required aria-describedby="s-email-err"><span class="err" id="s-email-err" aria-live="polite"></span></div>
+  <div class="field"><label for="s-pass">Password</label><span class="hint" id="s-pass-hint">At least 10 characters.</span><input type="password" id="s-pass" autocomplete="new-password" required minlength="10" aria-describedby="s-pass-hint s-pass-err"><span class="err" id="s-pass-err" aria-live="polite"></span></div>
+  <fieldset><legend class="legend">Agreements</legend>
+    <div class="check"><input type="checkbox" id="s-terms" required aria-describedby="s-terms-err"><label for="s-terms">I agree to the <a href="terms.html">terms</a> and have read the <a href="privacy.html">privacy policy</a>.</label></div>
+    <span class="err" id="s-terms-err" aria-live="polite"></span>
+    <div class="check"><input type="checkbox" id="s-age" required aria-describedby="s-age-err"><label for="s-age">I'm 18 or older, or my parent or guardian agrees to me making an account.</label></div>
+    <span class="err" id="s-age-err" aria-live="polite"></span>
+    <div class="check"><input type="checkbox" id="s-news"><label for="s-news">Email me game news (optional, unsubscribe any time).</label></div>
+  </fieldset>
+  <p><button class="btn primary" type="submit">Create account</button></p>
+  <p class="status" role="status" tabindex="-1"></p>
+</form>
+</section>
+
+</main>
+<footer>
+  <div class="cols">
+    <div><h2>Pumbloo Interactive</h2><p style="margin:0">An indie game studio from India.<br>Contact: <a href="mailto:hello@pumbloo.com">hello@pumbloo.com</a></p></div>
+    <nav aria-label="Studio"><h2>Studio</h2><ul><li><a href="index.html">Home</a></li><li><a href="support.html">Support</a></li><li><a href="account.html">Log in / Sign up</a></li><li><a href="support.html#business">Business details</a></li></ul></nav>
+    <nav aria-label="Legal"><h2>Legal</h2><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="cookies.html">Cookie policy</a></li><li><a href="terms.html">Terms and conditions</a></li><li><a href="refund.html">Refund policy</a></li><li><a href="privacy.html#delete">Delete my data</a></li></ul></nav>
+    <nav aria-label="Social"><h2>Follow</h2><ul><li><a href="https://discord.gg/jzEBQ8asQc" rel="noopener">Discord</a></li><li><a href="https://www.instagram.com/pumbloo_int/" rel="noopener">Instagram</a></li><li><a href="https://x.com/pumbloo_int" rel="noopener">X</a></li><li><a href="https://www.youtube.com/@pumbloo" rel="noopener">YouTube</a></li><li><a href="https://pumbloo.itch.io/" rel="noopener">itch.io</a></li></ul></nav>
+  </div>
+  <div class="legal"><span>© <span class="yr">2026</span> Pumbloo Interactive. All rights reserved.</span><button class="linkbtn" data-cookie-settings>Cookie settings</button></div>
+</footer>
+
+<div class="cookie" id="cookie" role="dialog" aria-modal="false" aria-labelledby="cookie-title" hidden>
+  <h2 id="cookie-title" tabindex="-1">Cookies and privacy</h2>
+  <p>We only use what the site needs to work. With your OK we'd also like to count visits (analytics) and show YouTube videos, which sets YouTube cookies. You can change this any time in <a href="cookies.html">Cookie settings</a>.</p>
+  <div class="opts" hidden>
+    <div class="check"><input type="checkbox" id="c-needed" checked disabled><label for="c-needed"><strong>Necessary</strong> (always on): remembers this choice.</label></div>
+    <div class="check"><input type="checkbox" id="c-analytics"><label for="c-analytics"><strong>Analytics</strong>: anonymous visit counts.</label></div>
+    <div class="check"><input type="checkbox" id="c-embeds"><label for="c-embeds"><strong>Video embeds</strong>: loads YouTube players.</label></div>
+  </div>
+  <div class="row">
+    <button class="btn primary" data-accept>Accept all</button>
+    <button class="btn" data-reject>Reject all</button>
+    <button class="btn" data-choose>Choose</button>
+    <button class="btn" data-save hidden>Save my choice</button>
+  </div>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
