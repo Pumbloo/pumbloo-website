@@ -3,7 +3,7 @@
 const PUMBLOO = {
   // Google Analytics 4 id, e.g. "G-XXXXXXX". Leave empty = no analytics at all.
   // Even when filled, it only loads after the visitor clicks "Accept" on the cookie banner.
-  analyticsId: "",
+  analyticsId: "G-TBQXG5L19V",
   contactEmail: "hello@pumbloo.com",
   snow: false
 };
@@ -29,7 +29,7 @@ const PUMBLOO = {
     window.dataLayer = window.dataLayer || [];
     window.gtag = function(){ dataLayer.push(arguments); };
     gtag("js", new Date());
-    gtag("config", PUMBLOO.analyticsId, { anonymize_ip: true });
+    gtag("config", PUMBLOO.analyticsId, { anonymize_ip: true, allow_google_signals: false, allow_ad_personalization_signals: false });
   }
 
   /* ---------- third-party embeds, only after a click or consent ---------- */
