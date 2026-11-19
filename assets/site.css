@@ -28,7 +28,8 @@ img,video{max-width:100%}
 .bar{position:absolute;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px max(4vw,16px)}
 .bar.solid{position:sticky;background:rgba(6,28,34,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:10px;color:var(--cream);text-decoration:none;font:22px/1 "Lilita One",sans-serif;letter-spacing:.02em}
-.brand img{width:36px;height:36px;border-radius:9px}
+.brand img{display:block;height:30px;width:auto}
+@media(max-width:600px){.brand img{height:24px}}
 .nav{display:flex;flex-wrap:wrap;gap:4px}
 .nav a{color:var(--cream);text-decoration:none;font-weight:700;font-size:15px;padding:10px 12px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center}
 .nav a:hover,.nav a[aria-current=page]{background:rgba(64,211,182,.16);color:var(--cream)}
