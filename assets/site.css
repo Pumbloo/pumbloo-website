@@ -60,7 +60,8 @@ img,video{max-width:100%}
 .btn.primary{background:var(--gold);color:#1d1406;border-color:var(--gold)}
 .btn.primary:hover{background:#ffeab0;color:#1d1406}
 .motion{position:absolute;right:max(4vw,16px);bottom:20px;z-index:6}
-.season{position:absolute;left:max(5vw,20px);bottom:22px;z-index:6;color:var(--soft);font-size:14px;text-shadow:0 1px 6px #000}
+.season{position:absolute;left:max(5vw,20px);right:max(5vw,20px);bottom:22px;z-index:6;margin:0;max-width:52ch;color:var(--soft);font-size:14px;line-height:1.45;text-shadow:0 1px 6px #000}
+@media(max-width:600px){.season{font-size:12.5px;bottom:16px;text-align:center;margin:0 auto}}
 
 /* bands */
 .band{padding:clamp(48px,7vw,96px) max(5vw,20px)}
